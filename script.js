@@ -6,6 +6,19 @@ const options = {
 		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
 	}
 };
+
+const cityName = document.getElementById('cityName');
+            const temp = document.getElementById('temp');
+            const humidity = document.getElementById('humidity');
+            const feels_like = document.getElementById('feels_like');
+            const max_temp = document.getElementById('max_temp');
+            const min_temp = document.getElementById('min_temp');
+            const sunrise = document.getElementById('sunrise');
+            const sunset = document.getElementById('sunset');
+            const wind_degrees = document.getElementById('wind_degrees');
+            const wind_speed = document.getElementById('wind_speed');
+            const submit = document.getElementById('submit');
+            const city = document.getElementById('city');
 const getWeather=(city)=>{
 cityName.innerHTML=city
 fetch(url+city,options)
